@@ -1,0 +1,177 @@
+﻿img{
+    position:absolute;
+    left:350px;
+    opacity:0.1;
+}
+
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: white; 
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+   transition:ease-in-out 0.2s;
+  animation-duration:2s;
+  font-size:11.5px;
+  text-transform:uppercase;
+ 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+   transition:ease-in-out 0.2s;
+  animation-duration:2s;
+
+}
+
+/*dropdown keyframes animation*/
+@keyframes growDown{
+    0%{
+transform: scaleY(0)
+    }
+
+    80%{
+        transform:scaleY(1.1)
+    }
+
+    100%{
+        transform:scaleY(1)
+    }
+}
+
+@keyframes rotateMenu{
+    0%{
+        transform: rotateX(-90deg)
+    }
+
+    70%{
+        transform: rotateX(20deg)
+    }
+
+    100%{
+        transform: rotateX(0deg)
+    }
+}
+
+@keyframes rotateX{
+    0%{
+        opacity:0;
+        transform: rotateX(-90deg)
+    }
+
+    50%{
+        transform: rotateX(-20deg)
+    }
+
+    100%{
+        opacity:1;
+        transform: rotateX(0deg)
+    }
+}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition:ease-in-out 0.2s;
+  animation-duration:0.3s;
+  font-size:12px;
+  text-transform:uppercase;
+   
+ 
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition:ease-in 0.2s;
+  animation-duration:2s;
+  transition: background-color 0.3s ease;
+ 
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #DBC4AA;
+                            transition:ease-in-out 0.2s;
+  animation-duration:2s;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;
+                                    transition:ease-in-out 0.2s;
+  animation-duration:2s;
+  font-size:11.5px;
+  /*animation*/
+animation: rotateX 0.6s ease-in-out forwards;
+transform-origin: top center;
+ /*animation*/
+animation: growDown 0.6s ease-in-out forwards;
+transform-origin: top center;
+}
+
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #02AFBC;
+                           transition:ease-in-out 0.2s;
+  animation-duration:2s;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropbtn:hover {background-color: #02AFBC;
+                 transition:ease-in-out 0.2s;
+  animation-duration:2s;
+}
+
+/*Sub menu content css*/
+.dropdown .dropdown-contentsub{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition:ease-in-out 0.2s;
+  animation-duration:2s;
+  font-size:11.5px;
+  text-transform:uppercase;
+}
+
+/* Show the dropdown sub menu on hover */
+.dropdown .dropdownsub:hover .dropdown-contentsub {
+    display: block;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+ font-size:11.5px;
+  /*animation*/
+animation: growDown 0.6s ease-in-out forwards;
+transform-origin: top center;
+}
+
+.dropdown .dropdownsub .dropdown-contentsub:hover {
+   transition:ease-in-out 0.3s;
+  animation-duration:2s;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PerCompanyMgr.master.cs" Inherits="DecisionMaker.PerCompanyMgr" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+       <script>
+           function myFunction() {
+               var x = document.getElementById("myLinks");
+               if (x.style.display === "block") {
+                   x.style.display = "none";
+               } else {
+                   x.style.display = "block";
+               }
+           }
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Manager| Per Company</title>
+    <link href="Mgr.css" rel="stylesheet" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                isVisible: false
+            }
+        })
+            </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          <%--Dropdown menu--%>
+            <div class="drop">
+                <asp:ImageButton class="imgbtn" runat="server" AlternateText="ITLogo" ImageUrl="~/img/itl.jpg" />
+                <button class="dropbtn">
+                    Home
+                </button>
+                <button class="dropbtn">
+                    Renewal GBC2
+                </button>
+                <button class="dropbtn">
+                    Renewal Domestic
+                </button>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Tag Issued
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="MgtCompany.aspx">Date Sent to Client</a> <a href="ITLAddCompany.aspx">Waiting Inv. Number</a> <a href="ITSLAddCompany.aspx">Invoice Details</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Efficiency
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="MgtCompany.aspx">Work In Progress</a> <a href="MgtCompany.aspx">Completed</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Director's Approval
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="MgtCompany.aspx">FSC</a>
+                    </div>
+                </div>
+                <button class="dropbtn">
+                    Update Mail Reference
+                </button>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Workflow
+                    </button>
+                    <div class="dropdown-content">
+                         
+                        <%--<a href="MgtCompany.aspx">Bank Transfer  >></a> Commenting for testing purposes--%>
+                          <%-- Sub menu starting here --%>
+                        <div class="dropdownsub">
+                            <a href="MgtCompany.aspx">Bank Transfer  <i class="fa fa-bars" aria-hidden="true"></i> </a>
+                   
+                        <div class="dropdown-contentsub">
+                             <a href="MgtCompany.aspx">Bank Transfer Workings</a> <a href="MgtCompany.aspx">Bank Transfer CallBack</a> <a href="MgtCompany.aspx">Bank Transfer Indemnity</a>
+                        </div>
+                        
+                    </div>
+              
+
+                        <%-- Sub menu ending here --%>
+                         <a href="MgtCompany.aspx">Application for Current Standing/Extract of file</a> <a href="MgtCompany.aspx">AFS/FS GBC2</a> <a href="MgtCompany.aspx">Cancel Workflow</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        ISAE Reporting
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="MgtCompany.aspx">Bank Transfer</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Preliminary Questionnaire
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="MgtCompany.aspx">Preliminary Questionnaire</a> <a href="MgtCompany.aspx">Approve Preliminary Questionnaire</a> <a href="MgtCompany.aspx">Preliminary Report</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        FSC/MRA/ROC Pending
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="MgtCompany.aspx">FSC GBC1</a> <a href="MgtCompany.aspx">FSC Penalty GBC1</a> <a href="MgtCompany.aspx">FSC GBC2</a> <a href="MgtCompany.aspx">FSC GBC1</a> <a href="MgtCompany.aspx">FSC Penalty GBC2</a> <a href="MgtCompany.aspx">ROC Domestic</a> <a href="MgtCompany.aspx">ROC Foundation</a> <a href="MgtCompany.aspx">FSC GBC1 Director Approval</a> <a href="MgtCompany.aspx">FSC GBC2 Director Approval</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        FSC/MRA/ROC Receive
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="MgtCompany.aspx">FSC GBC1</a> <a href="MgtCompany.aspx">FSC Penalty GBC1</a> <a href="MgtCompany.aspx">FSC GBC2</a> <a href="MgtCompany.aspx">FSC GBC1</a> <a href="MgtCompany.aspx">FSC Penalty GBC2</a> <a href="MgtCompany.aspx">ROC Domestic</a> <a href="MgtCompany.aspx">ROC Foundation</a> <a href="MgtCompany.aspx">Reference Check</a>
+                    </div>
+                </div>
+                <button class="dropbtn">
+                    Change Password
+                </button>
+                <button class="dropbtn">
+                    Leave Record
+                </button>
+                <button class="dropbtn">
+                    Staff Efficiency
+                </button>
+                <button class="dropbtn">
+                    Logout
+                </button>
+                <br />
+                <br />
+            </div>
+ 
+ 
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+ 
+       
+    </form>
+</body>
+</html>

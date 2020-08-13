@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionMaker", "DecisionMaker\DecisionMaker.csproj", "{BB8AA4F6-C2DE-44C7-894F-1F0DF88F1D64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{22F8E807-B563-4B00-932C-A127532C16C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionMakerTest", "DecisionMakerTest\DecisionMakerTest.csproj", "{04B78F60-63D0-44A6-B63E-7E6F85BE6E76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB8AA4F6-C2DE-44C7-894F-1F0DF88F1D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8AA4F6-C2DE-44C7-894F-1F0DF88F1D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8AA4F6-C2DE-44C7-894F-1F0DF88F1D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8AA4F6-C2DE-44C7-894F-1F0DF88F1D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B78F60-63D0-44A6-B63E-7E6F85BE6E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B78F60-63D0-44A6-B63E-7E6F85BE6E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B78F60-63D0-44A6-B63E-7E6F85BE6E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B78F60-63D0-44A6-B63E-7E6F85BE6E76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04B78F60-63D0-44A6-B63E-7E6F85BE6E76} = {22F8E807-B563-4B00-932C-A127532C16C0}
+	EndGlobalSection
+EndGlobal
